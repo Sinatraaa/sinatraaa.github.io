@@ -1,0 +1,631 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>About | Dat Nguyen</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:regular,italic" media="all">
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["IBM Plex Serif:regular,italic"]
+            }
+        });
+    </script>
+    <style type="text/css">
+        .tk-condor-compressed {
+            font-family: "condor-compressed", sans-serif;
+        }
+        
+        .tk-condor-condensed {
+            font-family: "condor-condensed", sans-serif;
+        }
+    </style>
+    <style type="text/css">
+            @font-face {
+            font-family: condor-compressed;
+            src: url(https://use.typekit.net/af/fd907f/00000000000000003b9ae492/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"), url(https://use.typekit.net/af/fd907f/00000000000000003b9ae492/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"), url(https://use.type truncated 2342bytes...
+    </style>
+    <script src="https://use.typekit.net/tle4qqg.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+    
+    <style>
+                html {
+            -webkit-tap-highlight-color: transparent
+        }
+        
+        ::-webkit-scrollbar {
+            width: 0;
+            background: 0 0
+        }
+
+        .close_horz,
+        .close_vert,
+        .quadrant_tr {
+            background-color: #2c2a2a
+        }
+
+        .close_vert {
+            position: absolute;
+            width: 2px;
+            height: 100%;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .close_horz {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            z-index: 100;
+            display: -ms-grid;
+            display: grid;
+            padding: 4vw;
+            grid-auto-columns: 1fr;
+            -ms-grid-rows: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr
+        }
+
+        .sidebar_trigger {
+            position: relative;
+            display: flex;
+            width: 80px;
+            height: 80px;
+            padding: 8px;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        #w-node-21 {
+            -ms-grid-column: 1;
+            grid-column-start: 1;
+            -ms-grid-row: 1;
+            grid-row-start: 1;
+            -ms-grid-column-span: 1;
+            grid-column-end: 2;
+            -ms-grid-row-span: 1;
+            grid-row-end: 2
+        }
+
+        .trigger_circle {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #f2efe8;
+            border-radius: 50%;
+            opacity: .4
+        }
+
+        .trigger_circle.project {
+            position: absolute;
+            left: auto;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            width: 80px;
+            height: 80px;
+            border-style: none;
+            border-width: 0;
+            opacity: 1
+        }
+
+        .circle_outer {
+            position: absolute;
+            display: flex;
+            width: 80px;
+            height: 80px;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 100%;
+            background-color: #f2efe8
+        }
+
+        .circle_inner {
+            position: absolute;
+            z-index: 10;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 78px;
+            height: 78px;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #f2efe8
+        }
+
+        .circle_mask {
+            position: absolute;
+            overflow: hidden;
+            width: 51%;
+            height: 51%;
+            opacity: .4
+        }
+
+        .circle_mask.one {
+            left: -1%;
+            top: -1%;
+            z-index: 9;
+            background-color: #2c2a2a
+        }
+
+        .circle_mask.two {
+            top: -1%;
+            right: -1%;
+            z-index: 7;
+            background-color: #2c2a2a
+        }
+
+        .circle_mask.three {
+            right: -1%;
+            bottom: -1%;
+            z-index: 5;
+            background-color: #2c2a2a
+        }
+
+        .circle_mask.four {
+            left: -1%;
+            bottom: -1%;
+            z-index: 3;
+            background-color: #2c2a2a
+        }
+
+        .trigger_icon {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none
+        }
+
+        .circle_outer,
+        .nav,
+        .page_container,
+        .trigger_icon,
+        .w-nav-overlay,
+        .w-tab-content {
+            overflow: hidden
+        }
+
+        .trigger_icon.close {
+            width: 24px;
+            height: 24px;
+            opacity: .6;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none
+        }
+
+        #w-node-22 {
+            -ms-grid-column: 1;
+            grid-column-start: 1;
+            -ms-grid-column-span: 1;
+            grid-column-end: 2;
+            -ms-grid-row: 2;
+            grid-row-start: 2;
+            -ms-grid-row-span: 1;
+            grid-row-end: 3;
+            -ms-grid-column-align: center;
+            justify-self: center;
+            -ms-grid-row-align: center;
+            align-self: center
+        }
+
+        .sidebar_title {
+            -webkit-align-self: end;
+            -ms-flex-item-align: end;
+            align-self: end;
+            opacity: .5
+        }
+
+        .name_text,
+        .title_text {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        #w-node-23 {
+            -ms-grid-column: 1;
+            grid-column-start: 1;
+            -ms-grid-column-span: 1;
+            grid-column-end: 2;
+            -ms-grid-row: 3;
+            grid-row-start: 3;
+            -ms-grid-row-span: 1;
+            grid-row-end: 4;
+            -ms-grid-column-align: center;
+            justify-self: center;
+            -ms-grid-row-align: end;
+            align-self: end
+        }
+        
+        .nav_no {
+            writing-mode: vertical-rl
+        }
+        
+        .project_no {
+            writing-mode: vertical-rl
+        }
+        
+        .project_title {
+            white-space: nowrap
+        }
+
+        .body--about {
+            background-color: #929786;
+            color: #f2efe8
+        }        
+
+        .page_headline {
+            margin-bottom: 12vw
+        }
+
+        h1,
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-family: condor-compressed, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase
+        }
+
+        h1 {
+            font-size: 8.4vw;
+            line-height: .9em;
+            margin: .67em 0
+        }
+
+        h2 {
+            font-size: 3.19vw
+        }
+
+        .text--50 {
+            opacity: .5
+        }
+
+        .w-layout-grid {
+            display: -ms-grid;
+            display: grid;
+            grid-auto-columns: 1fr;
+            -ms-grid-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            -ms-grid-rows: auto auto;
+            grid-template-rows: auto auto;
+            grid-row-gap: 16px;
+            grid-column-gap: 16px
+        }
+
+        .grid {
+            width: 100%;
+            -ms-grid-columns: 4vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4vw;
+            grid-template-columns: 4vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 4vw;
+            -ms-grid-rows: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            -webkit-perspective: 1000px;
+            perspective: 1000px
+        }
+
+        #w-node-experience {
+            -ms-grid-column: 5;
+            grid-column-start: 5;
+            -ms-grid-column-span: 10;
+            grid-column-end: 15;
+            -ms-grid-row: 3;
+            grid-row-start: 3;
+            -ms-grid-row-span: 1;
+            grid-row-end: 4
+        }
+
+        #w-node-awards {
+            -ms-grid-column: 5;
+            grid-column-start: 5;
+            -ms-grid-column-span: 10;
+            grid-column-end: 15;
+            -ms-grid-row: 4;
+            grid-row-start: 4;
+            -ms-grid-row-span: 1;
+            grid-row-end: 5
+        }
+
+        #w-node-coding {
+            -ms-grid-column: 5;
+            grid-column-start: 5;
+            -ms-grid-column-span: 10;
+            grid-column-end: 15;
+            -ms-grid-row: 5;
+            grid-row-start: 5;
+            -ms-grid-row-span: 1;
+            grid-row-end: 6
+        }
+
+        #w-node-headline {
+            -ms-grid-column: 5;
+            grid-column-start: 5;
+            -ms-grid-column-span: 8;
+            grid-column-end: 13;
+            -ms-grid-row: 1;
+            grid-row-start: 1;
+            -ms-grid-row-span: 1;
+            grid-row-end: 2
+        }
+
+        .awards_row,
+        .experience_row {
+            width: 100%;
+            margin-bottom: 4vw;
+            grid-auto-columns: 1fr;
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr
+        }
+
+        .experience_row {
+            display: grid;
+            transform-origin: 0 0
+        }
+
+        .awards_row {
+            display: -ms-grid;
+            display: grid;
+            -ms-grid-rows: auto;
+            grid-template-rows: auto;
+            transform-origin: 0 0
+        }
+
+        .section_title {
+            margin-bottom: 8vw
+        }
+
+        .p--large.text--70 {
+            opacity: .7
+        }
+
+        .p--large {
+            font-size: 1.25vw
+        }
+
+        .about_awards,
+        .about_experience,
+        .about_coding {
+            margin-bottom: 24vw
+        }
+
+        #skill { 
+            list-style: none;
+            font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+            width: 296px;
+            position: relative;
+            line-height: 2em;
+            padding: 30px 0;
+        }
+
+        #skill li { 
+            margin-bottom:50px; 
+            background:#e9e5e2;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(#e1ddd9), to(#e9e5e2));
+            background-image: -webkit-linear-gradient(top, #e1ddd9, #e9e5e2);
+            background-image: -moz-linear-gradient(top, #e1ddd9, #e9e5e2);
+            background-image: -ms-linear-gradient(top, #e1ddd9, #e9e5e2);
+            background-image: -o-linear-gradient(top, #e1ddd9, #e9e5e2);
+            background-image: linear-gradient(top, #e1ddd9, #e9e5e2);  
+            height:20px; 
+            border-radius:10px; 
+            -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;   
+            -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;    
+            box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;     
+        }
+
+        #skill li h3 { 
+            position:relative; 
+            top:-25px;
+        }
+
+        .bar { 
+            height:18px; 
+            margin:1px 2px;  
+            position:absolute;
+            border-radius:10px;
+            -moz-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;
+            -webkit-box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;    
+            box-shadow: 0 1px 0px #fcfcfc inset, 0 1px 0 #bebbb9;       
+        }
+
+        .graphic-design {
+            width:80%; 
+            -moz-animation:graphic-design 2s ease-out;
+            -webkit-animation:graphic-design 2s ease-out;
+            background-color: #85adad;
+        }
+
+        .html-css {
+            width:90%;
+            -moz-animation:html-css 2s ease-out;
+            -webkit-animation:html-css 2s ease-out;
+            background-color: #85adad;
+        }
+
+        .jquery {
+            width:95%;
+            -moz-animation:jquery 2s ease-out;
+            -webkit-animation:jquery 2s ease-out;
+            background-color: #85adad;
+        }
+
+        .wordpress {
+            width:70%;
+            -moz-animation:wordpress 2s ease-out;
+            -webkit-animation:wordpress 2s ease-out;
+            background-color: #85adad;
+        }
+
+        @-moz-keyframes graphic-design {0%  { width:0px;} 100%{ width:80%;}  }
+        @-moz-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+        @-moz-keyframes jquery      { 0%  { width:0px;} 100%{ width:95%;}  }
+        @-moz-keyframes wordpress   { 0%  { width:0px;} 100%{ width:70%;}  }
+
+        @-webkit-keyframes graphic-design       { 0%  { width:0px;} 100%{ width:80%;}  }
+        @-webkit-keyframes html-css        { 0%  { width:0px;} 100%{ width:90%;}  }
+        @-webkit-keyframes jquery      { 0%  { width:0px;} 100%{ width:95%;}  }
+        @-webkit-keyframes wordpress   { 0%  { width:0px;} 100%{ width:70%;}  }
+
+        
+    </style>
+</head>
+
+<body class="body--about" style="height: 2324px;">
+
+    <nav class="sidebar">
+        <a id="w-node-21"
+            href="/index" class="sidebar_trigger close">
+            <div class="trigger_circle project">
+                <div class="circle_outer">
+                    
+                    <div class="circle_inner"></div>
+                    <div class="circle_mask one"></div>
+                    <div class="circle_mask two"></div>
+                    <div class="circle_mask three"></div>
+                    <div class="circle_mask four"></div>
+
+                </div>
+            </div>
+            <div class="trigger_icon close">
+                <div class="close_vert"></div>
+                <div class="close_horz"></div>
+            </div>
+        </a>
+        <div id="w-node-22" class="sidebar_name">
+            <h3 class="name_text">Dat Nguyen</h3></div>
+        <div id="w-node-23" class="sidebar_title">
+            <h3 class="title_text">About</h3></div>
+    </nav>
+    
+    <main>
+        <main>
+            <div id="luxy" class="page_container" style="width: 100%; position: fixed; transform: translate3d(0px, 0px, 0px);">
+                <div class="w-layout-grid grid">
+
+                    <div id="w-node-headline"
+                        class="page_headline">
+                        <h1><span class="text--50">I'm Dat Nguyen. An inspired artist who</span> want to bring the best experience to everyone</h1></div>
+                    
+                    <div id="w-node-experience" class="about_experience">
+                        <h2 class="section_title">Hobbies</h2>
+                        <div class="experience_row">
+                            <div class="p--large text--70">Saxophone</div>
+                            <div class="p--large text--70">Advanced</div>
+                            <div class="p--large text--70">2018–Present</div>
+                        </div>
+                        <div class="experience_row">
+                            <div class="p--large text--70">Piano</div>
+                            <div class="p--large text--70">Intermediate</div>
+                            <div class="p--large text--70">2017–Present</div>
+                        </div>
+                        <div class="experience_row">
+                            <div class="p--large text--70">Chess</div>
+                            <div class="p--large text--70">Advanced</div>
+                            <div class="p--large text--70">2011-Present</div>
+                        </div>
+                        <div class="experience_row">
+                            <div class="p--large text--70">Pencil Drawing</div>
+                            <div class="p--large text--70">Intermediate</div>
+                            <div class="p--large text--70">2011-Present</div>
+                        </div>
+                    </div>
+                    <div id="w-node-awards" class="about_awards">
+                        <h2 class="section_title">Awards</h2>
+                        <div class="awards_row">
+                            <div class="p--large">TechKid's Web Design Contest</div>
+                            <div class="p--large">First place</div>
+                            <div class="p--large">2019</div>
+                        </div>
+                        <div class="awards_row">
+                            <div class="p--large">District-level Chess Tournament</div>
+                            <div class="p--large">Second Place</div>
+                            <div class="p--large">2014</div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="w-node-coding" class="about_coding">
+                        <h2 class="section_title">Coding Skill</h2>
+                        <ul id="skill">
+                        <li><span class="bar graphic-design"></span><h3>Python</h3></li>
+                        <li><span class="bar html-css"></span><h3>Html</h3></li>
+                        <li><span class="bar jquery"></span><h3>Javascript</h3></li>
+                        <li><span class="bar wordpress"></span><h3>CSS</h3></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+
+    
+    <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/luxy.js@0.1.0/dist/js/luxy.min.js"></script>
+    <script>
+        $(window).width() >= 1024 && luxy.init();
+    </script>
+</body>
+
+</html>
